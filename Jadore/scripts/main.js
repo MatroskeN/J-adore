@@ -6,4 +6,9 @@ var swiper = new Swiper('.swiper-container', {
         draggable: true,
         snapOnRelease: false,
     },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    },
 });

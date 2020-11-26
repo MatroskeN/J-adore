@@ -1,3 +1,63 @@
+/* jost-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/jost-v4-latin_cyrillic-300.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/jost-v4-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/jost-v4-latin_cyrillic-300.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/jost-v4-latin_cyrillic-300.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/jost-v4-latin_cyrillic-300.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/jost-v4-latin_cyrillic-300.svg#Jost') format('svg');
+    /* Legacy iOS */
+}
+
+/* jost-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jost-v4-latin_cyrillic-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/jost-v4-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/jost-v4-latin_cyrillic-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/jost-v4-latin_cyrillic-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/jost-v4-latin_cyrillic-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/jost-v4-latin_cyrillic-regular.svg#Jost') format('svg');
+    /* Legacy iOS */
+}
+
+/* jost-600 - latin_cyrillic */
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/jost-v4-latin_cyrillic-600.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/jost-v4-latin_cyrillic-600.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/jost-v4-latin_cyrillic-600.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/jost-v4-latin_cyrillic-600.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/jost-v4-latin_cyrillic-600.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/jost-v4-latin_cyrillic-600.svg#Jost') format('svg');
+    /* Legacy iOS */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,13 +66,38 @@ body {
 
 #slideMain {
     height: 100vh;
+
+    .secrets {
+        position: absolute;
+        width: 130px;
+        height: 94px;
+        top: 105px;
+        right: 9vw;
+        z-index: 10;
+    }
+}
+
+:root {
+    --swiper-theme-color: white !important;
+}
+
+.swiper-pagination {
+    text-align: left !important;
+    margin-left: 15% !important;
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    border: solid 1px white;
 }
 
 .slider {
     background: url(../image/big-slide.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    background-position: center;
+    height: 100vh;
     width: 402.5px;
     display: flex;
     justify-content: center;
@@ -47,4 +132,322 @@ body {
     border-radius: 10px;
     left: 0;
     top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    position: fixed;
+    max-width: 1300px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+
+    .logo-header {
+        height: 55px;
+        width: 172px;
+    }
+
+    .desktop-meny {
+        display: flex;
+
+        .head-links {
+            min-width: 223px;
+            margin-left: 53px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            color: white;
+
+            a {
+                text-decoration: none;
+                font-family: Jost;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 23px;
+
+                color: #FFFFFF;
+            }
+
+            .head-link1 {
+                margin-right: 34px;
+            }
+        }
+
+        .head-times {
+            min-width: 154px;
+            margin-top: 7px;
+            margin-left: 50px;
+            font-family: Jost;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+
+            color: #FFFFFF;
+        }
+
+        .head-adress {
+            margin-top: 7px;
+            min-width: 130px;
+            height: 34px;
+            margin-left: 18px;
+            font-family: Jost;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 124.18%;
+            /* or 17px */
+
+
+            color: #FFFFFF;
+        }
+
+        .head-messengers {
+            margin-top: 7px;
+            margin-left: 33px;
+            display: flex;
+
+            .mess-svg {
+                height: 32px;
+                width: 32px;
+                margin-right: 9px;
+            }
+        }
+
+        .head-phone {
+            min-width: 149px;
+            margin-left: 4px;
+            margin-top: 12px;
+
+            font-family: Jost;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+
+    .head-glass {
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+
+    .head-cart {
+        display: flex;
+        margin-top: 10px;
+
+        .count-cart {
+            margin-left: 20px;
+            width: 24px;
+            height: 24px;
+            background: url(../image/Ellipse\ 1.png);
+            background-repeat: no-repeat;
+            text-align: center;
+            align-content: center;
+            padding-top: 4px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+        }
+    }
+}
+
+.content {
+    position: relative;
+
+    .catalog-box {
+        position: relative;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .catalog {
+            width: 100%;
+            height: 836px;
+
+            .catalog_table {
+                width: 100%;
+                height: 792px;
+                margin-top: 36px;
+                border-spacing: 0px;
+                border-collapse: collapse;
+
+                tr {
+                    height: 300px;
+                    width: 100%;
+                    padding: 0;
+
+                    td {
+                        position: relative;
+                        border-spacing: 0px;
+                        border-collapse: collapse;
+                        padding: 0;
+
+                        &:hover {
+                            a {
+                                top: 40%;
+                                transition: all 0.4s;
+                            }
+                        }
+
+                        a {
+                            position: absolute;
+                            top: 80%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            text-align: center;
+                            width: 100%;
+                            font-family: Jost;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 20px;
+                            line-height: 29px;
+                            /* identical to box height */
+
+
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    .weeding {
+                        background: url(/image/wedding\ dress.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    .evening {
+                        background: url(/image/evening\ dress.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    .accessories {
+                        background: url(/image/accessories.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    .boudoir {
+                        background: url(/image/boudoir\ dress.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    .jacket {
+                        background: url(/image/jacket.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    .shoes {
+                        background: url(/image/shoes.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    .phata {
+                        background: url(/image/fata.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    .theme {
+                        background: url(/image/thematic.jpg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+
+        .advice {
+            position: absolute;
+            top: 70%;
+            left: -11%;
+
+            img {
+                width: 115px;
+            }
+        }
+
+        .little-heart {
+            position: absolute;
+            right: -8%;
+            top: 90%;
+        }
+    }
+
+    .dress-block {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 609px;
+        background: url(../image/Group\ 160.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .dress-label {
+            margin-top: 37px;
+            font-family: Jost;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 58px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.085em;
+
+            color: #885675;
+        }
+
+        .dress-content {
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            width: 100%;
+            height: 100%;
+            margin-top: 20px;
+            padding-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            .dresses{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 16%;
+                text-align: center;
+                .dresses-pic{
+                    margin-top: auto;
+                }
+            }
+        }
+    }
 }
