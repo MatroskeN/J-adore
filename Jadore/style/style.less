@@ -82,6 +82,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
 }
 
 #slideMain {
@@ -165,10 +166,20 @@ header {
     flex-direction: row;
     z-index: 10;
     position: fixed;
-    max-width: 1300px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .head-container {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: row;
+        z-index: 10;
+        position: fixed;
+        max-width: 1300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
     .logo-header {
         height: 55px;
@@ -511,7 +522,103 @@ header {
                     }
                 }
 
-                .dresses-pic {}
+                .dresses-pic {
+                    margin-bottom: -20px;
+                }
+            }
+        }
+    }
+
+    .info-block {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .purple-box {
+            margin-top: 76px;
+            margin-left: auto;
+            position: relative;
+            width: 1025px;
+            height: 416px;
+            border: 2px solid #885574;
+            box-sizing: border-box;
+
+            .hearts {
+                position: absolute;
+                right: -44px;
+                top: -20px;
+            }
+
+            .salon {
+                position: absolute;
+                left: -170px;
+                top: -3px;
+                z-index: 10;
+            }
+
+            .back_dots {
+                position: absolute;
+                bottom: 18px;
+                left: -203px;
+            }
+
+            .text-box {
+                display: flex;
+                flex-direction: column;
+                max-width: 453px;
+                margin-left: auto;
+                margin-right: 87px;
+                margin-top: 49px;
+                text-align: center;
+
+                .info-label {
+                    font-family: Jost;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 45px;
+                    line-height: 65px;
+                    /* identical to box height */
+
+
+                    color: #885574;
+                }
+
+                .info-text {
+                    margin-top: 22px;
+                    font-family: Jost;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 23px;
+                    text-align: center;
+
+                    color: #47484E;
+                }
+
+                .info-link {
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 22px;
+                    a {
+                        
+                        font-family: Caveat;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 25px;
+                        line-height: 31px;
+                        /* identical to box height */
+
+
+                        color: #885574;
+                    }
+                    .info_arrow{
+                        margin-left:13px;
+                    }
+                }
             }
         }
     }
