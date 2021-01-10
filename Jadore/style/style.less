@@ -304,7 +304,7 @@ header {
 
     .catalog-box {
         position: relative;
-        max-width: 1200px;
+        max-width: 1150px;
         margin-left: auto;
         margin-right: auto;
 
@@ -624,6 +624,7 @@ header {
     }
     .prim-block{
         position: relative;
+        display: flex;
         width: 100%;
         max-width: 1200px;
         margin-left: auto;
@@ -633,6 +634,164 @@ header {
             position: absolute;
             left: 0;
             top: 0;
+        }
+        .line{
+            position: absolute;
+            left: 340px;
+            top: 0px;
+        }
+
+        .prim-text{
+            display: flex;
+            flex-direction: column;
+            margin-top: 112px;
+            max-width: 305px;
+            text-align: right;
+            .label{
+                display: flex;
+                margin-left: auto;
+                margin-bottom: 11px;
+                img{
+                    width: 34px;
+                    height: 26px;
+                    margin-top: 17px;
+                }
+                p{
+                    font-family: Jost;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 35px;
+                    line-height: 51px;
+                    /* identical to box height */
+
+
+                    color: #885574;
+
+                    margin: 0;
+                    margin-right: 10px;
+                }
+            }
+            .descr{
+                font-family: Jost;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 23px;
+                text-align: right;
+
+                color: #47484E;
+                
+                margin-bottom: 26px;
+            }
+            .signup{
+                display: flex;
+                width: 232px;
+                margin-left: auto;
+                p{
+                    margin: 0;
+                    font-family: Caveat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 25px;
+                    line-height: 84%;
+                    /* or 21px */
+
+                    text-align: center;
+
+                    color: #885574;
+                }
+                img{
+                    width: 37px;
+                    height: 12px;
+                    margin-top: 15px;
+                }
+            }
+
+        }
+
+        .prim-swiper{
+            margin-left: 130.5px;
+            height: 376px !important;
+            .slider{
+                width: 835px;
+                background: url(/image/примерочная.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .transarr{
+            position: absolute;
+            left: 75.06%;
+            top: 99.77%;
+        }
+    }
+    .top-block{
+        margin-top: 89px;
+        width: 100%;
+        height: 694px;
+        background: url(/image/Group\ 160.png);
+        background-size: cover;
+
+        .top-container{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            .top-label{
+                margin-top: 43px;
+                display: flex;
+                width: 100%;
+                .label{
+                    font-family: Jost;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 40px;
+                    line-height: 58px;
+                    /* identical to box height */
+
+
+                    color: #47484E;
+                }
+                .seeall{
+                    display: flex;
+                    margin-left: auto;
+                    margin-top: 20px;
+                    p{
+                        margin:0;
+                        font-family: Caveat;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 25px;
+                        line-height: 31px;
+                        /* identical to box height */
+
+
+                        color: #47484E;
+                    }
+                    .seearrow{
+                        width: 28px;
+                        height: 9px;
+                        margin-top: 15px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .top-swiper{
+                margin-top: 22px;
+                height: 500px !important;
+                width: 100%;
+                .slider{
+                    width: 380px !important;
+                    margin-right: 30px;
+                    background: transparent;
+                }
+            }
         }
     }
 }
