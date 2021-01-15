@@ -1,11 +1,13 @@
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 'auto',
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        hide: false,
-        draggable: true,
-        snapOnRelease: false,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
     },
+});
+var swiper = new Swiper('.mini-swiper', {
+    slidesPerView: 'auto',
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
@@ -48,6 +50,7 @@ var swiper5 = new Swiper('.brand-swiper', {
     autoplay: {
         delay: 5000,
     },
+    loop: true,
 });
 
 //search
@@ -74,6 +77,27 @@ $("#xclose").on("click", function () {
     document.getElementById("burger-menu").style.display = "none";
 });
 
-//position: absolute;
-// right: 25px;
-// top: 15px;
+
+$("#open-pop").on("click", function () {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("dark").style.display = "block";
+    document.getElementById("body").style.overflow = "hidden";
+})
+
+$("#close-pop").on("click", function () {
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("dark").style.display = "none";
+    document.getElementById("body").style.overflow = "visible";
+})
+
+$("#sign").on("click", function () {
+    document.getElementById("signing").style.display = "block";
+    document.getElementById("dark").style.display = "block";
+    document.getElementById("body").style.overflow = "hidden";
+})
+
+$("#close-sign").on("click", function () {
+    document.getElementById("signing").style.display = "none";
+    document.getElementById("dark").style.display = "none";
+    document.getElementById("body").style.overflow = "visible";
+})
