@@ -25,10 +25,11 @@
         </div>
         <div class="sign-form">
             <form action="">
-                <input type="text" name="name" id="name" placeholder="Ваше имя">
-                <input type="tel" name="phone" id="phone" placeholder="Ваш телефон">
+                <input type="text" name="name" id="name" placeholder="Ваше имя*" required>
+                <input type="tel" name="phone" id="phone" placeholder="Ваш телефон*" required>
                 <input type="email" name="email" id="email" placeholder="Ваш email">
-                <input type="text" name="message" id="message" placeholder="Ваш вопрос">
+                <input type="datetime" name="date" id="date" placeholder="Желаемое дата и время*" required>
+                <input type="text" name="message" id="message" placeholder="Комментарии">
                 <div class="agreed">
                     Нажимая кнопку “Оттправить”, Вы даёте согласие на обработку ваших персональных данных.
                 </div>
@@ -44,12 +45,15 @@
     </div>
     <header name="top">
         <div class="head-container">
-            <a href=""><img class="logo-header" src="/image/logo header.svg" alt="logo-header"></a>
+            <div class="logo">
+                <a href=""><img class="logo-header" src="/image/logo header.svg" alt="logo-header"></a>
+                <a href=""><img class="logo-header hover" src="/image/лого жадор 2.svg" alt="logo-header"></a>
+            </div>
             <div class="desktop-meny" id="opened">
                 <div class="head-links">
-                    <div class="head-link1"><a href="">Каталог</a></div>
-                    <div class="head-link1"><a href="">Салон</a></div>
-                    <div class="head-link1"><a href="">Контакты</a></div>
+                    <div class="head-link1"><a href="catalog1.html">Каталог</a></div>
+                    <div class="head-link1"><a href="about.html">Салон</a></div>
+                    <div class="head-link1"><a href="contacts.html">Контакты</a></div>
                 </div>
                 <div class="head-times">
                     <b>Пн-Сб:</b> с 11:00 до 19:00</br>
@@ -222,14 +226,14 @@
             </div>
         </div>
         <!-- Add Scrollbar -->
-        <div class="swiper-pagination">
+        <div class="swiper-pagination main-pagination">
         </div>
         <div class="secrets">
             <img class="swing" src="/image/secrets.svg" alt="secrets">
         </div>
     </div>
     <div class="content">
-        <div class="catalog-box">
+        <div class="catalog-box main-catalog">
             <div class="catalog">
                 <div class="catalog-table">
                     <div class="item weeding">
@@ -307,7 +311,7 @@
                 </div>
             </div>
             <div class="advice">
-                <a href=""><img class="advice-img swing" src="image/Group 196.png" alt="advice"></a>
+                <a href=""><img class="advice-img swing1" src="image/Group 196.png" alt="advice"></a>
             </div>
             <div class="little-heart">
                 <img class="swing" src="/image/heart_1.jpg" alt="heart">
@@ -477,7 +481,7 @@
                 <!-- Add Scrollbar -->
                 <div class="swiper-scrollbar2"></div>
             </div>
-            <img src="image/Ресурс 1 8.png" alt="arrow" class="transarr">
+            <img src="image/Ресурс 1 14.svg" alt="arrow" class="transarr">
         </div>
         <div class="top-block">
             <div class="top-container">
@@ -505,7 +509,7 @@
                 <div class="swiper-container top-swiper" id="slideMain">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slider">
-                            <img src="/image/sale.png" alt="sale" class="sale">
+                            <img src="/image/sale.svg" alt="sale" class="sale">
                             <a class="link-vesh" href="">
                                 <img class="vesh active" src="image/Group 59.svg" alt="vesh">
                                 <img class="vesh passive" src="image/cart.svg" alt="vesh">
@@ -537,7 +541,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide slider">
-                            <img src="image/new.png" alt="sale" class="sale">
+                            <img src="image/new.svg" alt="sale" class="sale">
                             <a class="link-vesh" href="">
                                 <img class="vesh active" src="image/Group 59.svg" alt="vesh">
                                 <img class="vesh passive" src="image/cart.svg" alt="vesh">
@@ -568,7 +572,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide slider">
-                            <img src="image/pod_zakaz.png" alt="sale" class="sale">
+                            <img src="image/pod zakaz.svg" alt="sale" class="sale">
                             <a class="link-vesh" href="">
                                 <img class="vesh active" src="image/Group 59.svg" alt="vesh">
                                 <img class="vesh passive" src="image/cart.svg" alt="vesh">
@@ -599,7 +603,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide slider">
-                            <img src="image/hit.png" alt="sale" class="sale">
+                            <img src="image/hit.svg" alt="sale" class="sale">
                             <a class="link-vesh" href="">
                                 <img class="vesh active" src="image/Group 59.svg" alt="vesh">
                                 <img class="vesh passive" src="image/cart.svg" alt="vesh">
@@ -630,7 +634,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide slider">
-                            <img src="image/sale.png" alt="sale" class="sale">
+                            <img src="image/sale.svg" alt="sale" class="sale">
                             <a class="link-vesh" href="">
                                 <img class="vesh active" src="image/Group 59.svg" alt="vesh">
                                 <img class="vesh passive" src="image/cart.svg" alt="vesh">
@@ -661,7 +665,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide slider">
-                            <img src="image/new.png" alt="sale" class="sale">
+                            <img src="image/new.svg" alt="sale" class="sale">
                             <a class="link-vesh" href="">
                                 <img class="vesh active" src="image/Group 59.svg" alt="vesh">
                                 <img class="vesh passive" src="image/cart.svg" alt="vesh">
@@ -716,18 +720,19 @@
                 <img class="heart" src="image/Ресурс 7 1.svg" alt="heart">
             </div>
             <div class="swiper-container choose-swiper" id="slideMain">
-                <svg class="choose-nav-right" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                <svg class="choose-nav-right" width="38" height="38" viewBox="0 0 38 38" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1.41113" y="0.5" width="31.0889" height="31.0889" rx="0.5" stroke="#885574" />
-                    <path d="M15.2667 21.1111L20.3333 16.0444L15.2667 10.9777" stroke="#885574" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                    <rect x="0.5" y="0.5" width="37" height="37" stroke="#47484E" />
+                    <path d="M17 25L23 19L17 13" stroke="#47484E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
                 </svg>
-                <svg class="choose-nav-left" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                <svg class="choose-nav-left" width="38" height="38" viewBox="0 0 38 38" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1.41113" y="0.5" width="31.0889" height="31.0889" rx="0.5" stroke="#885574" />
-                    <path d="M15.2667 21.1111L20.3333 16.0444L15.2667 10.9777" stroke="#885574" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                    <rect x="0.5" y="0.5" width="37" height="37" stroke="#47484E" />
+                    <path d="M21 25L15 19L21 13" stroke="#47484E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
                 </svg>
+
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slider">
                         <div class="descr">
@@ -826,7 +831,7 @@
             <div class="insta-head">
                 <img class="instaarr" src="image/arr2.svg" alt="arr">
                 <div class="label">
-                    <p>Подписывайся на наш INSTAGRAM</p>
+                    <p>Подписывайся на наш Instagram</p>
                     <img src="image/Ресурс 7 1.svg" alt="">
                 </div>
                 <img class="arrow" src="image/Ресурс 1 9.png" alt="arrow">
@@ -866,7 +871,7 @@
             <div class="brand-header">
                 <div class="label">
                     <p>Наши бренды</p>
-                    <img src="image/Group 162.png" alt="star">
+                    <img src="image/Group 162.svg" alt="star">
                 </div>
                 <div class="sublabel">
                     Бренды, с которыми мы сотрудничаем
@@ -907,7 +912,7 @@
                 <div class="foot-info">
                     <div class="logo">
                         <a href="">
-                            <img src="image/лого жадор 3.svg" alt="logo">
+                            <img src="image/лого жадор 4.png" alt="logo">
                         </a>
                     </div>
                     <div class="contacts">
@@ -987,7 +992,8 @@
                         </div>
                     </div>
                     <div class="create">
-                        Создай свой идеальный образ с нами
+                        <p>Создай свой идеальный образ с нами <img src="image/Ресурс 8 2.svg" alt="heart"
+                                style="margin-left: 5px"></p>
                     </div>
                     <div class="copyright">
                         2020 J’ADORE Wedding Boutique<br>
@@ -1047,7 +1053,7 @@
                     <a href="">Примерочная</a>
                 </div>
                 <div class="foot-fixed">
-                        <img id="sign" class="sign swing" src="image/Group 165.png" alt="sign">
+                    <img id="sign" class="sign swing3" src="image/Group 165.svg" alt="sign">
                     <a href="">
                         <img class="inter swing" src="image/Intersect.png" alt="inter">
                     </a>

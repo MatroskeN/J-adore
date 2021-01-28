@@ -1,7 +1,7 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.main-swiper', {
     slidesPerView: 'auto',
     pagination: {
-        el: '.swiper-pagination',
+        el: '.main-pagination',
         type: 'bullets',
         clickable: true
     },
@@ -101,3 +101,13 @@ $("#close-sign").on("click", function () {
     document.getElementById("dark").style.display = "none";
     document.getElementById("body").style.overflow = "visible";
 })
+
+
+$(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 5000,
+    max: 40000,
+    from: 200,
+    to: 500,
+    grid: true
+});
