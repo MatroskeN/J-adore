@@ -4599,6 +4599,123 @@ header {
         margin-bottom: 57px;
 
         .map {
+            .info-label{
+                position: absolute;
+                top: 9px;
+                left: 10px;
+                width: 363px;
+                height: 311px;
+                z-index: 6;
+                background: #FFFFFF;
+
+                .text-box{
+                    padding-top: 34px;
+                    padding-left: 46px;
+                    .address{
+                        font-family: Jost;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 131.77%;
+                        /* identical to box height, or 24px */
+
+
+                        color: #47484E;
+
+                    }
+                    .time{
+                        display: -webkit-box;
+                        p{
+                            margin-bottom: unset;
+                            font-family: Jost;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 18px;
+                            line-height: 26px;
+
+                            color: #47484E;
+
+                        }
+
+                        .dark-text{
+                            margin-right: 5px;
+                            font-family: Jost;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 131.77%;
+                            /* identical to box height, or 24px */
+
+
+                            color: #47484E;
+
+                        }
+                    }
+
+                    .phone{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 12px;
+                        a{
+                            font-family: Jost;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 18px;
+                            line-height: 26px;
+                            /* identical to box height */
+
+
+                            color: #47484E;
+                        }
+                    }
+
+                    .calls{
+                        font-family: Jost;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 26px;
+                        /* identical to box height */
+
+
+                        color: #47484E;
+                        margin-top: 12px;
+                    }
+
+                    .socials{
+                        margin-top: 18px;
+                        a{
+                            margin-right: 18px;
+
+                            img{
+                                transition: all 0.4s;
+
+                                &:hover{
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            @media(max-width:960px){
+                .info-label{
+                    position: relative;
+                    top: 9px;
+                    left: 10px;
+                    width: 300px;
+                    height: auto;
+                    z-index: 6;
+                    background: #FFFFFF;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 40px;
+                    .text-box{
+                        padding-left: unset !important;
+                        padding-top: unset !important;
+                    }
+                }
+            }
             z-index: 5;
             position: relative;
         }
