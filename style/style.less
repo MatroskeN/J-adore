@@ -359,7 +359,7 @@ header {
             background: transparent;
             border-bottom: 1px solid #ffffff;
             margin-left: 55px;
-            width: 850px;
+            width: 800px;
             height: 45px;
 
             font-family: Jost;
@@ -447,16 +447,20 @@ header {
                     background-position: top !important;
 
                     .gradient {
+                        transition: all 0.8s !important;
                         width: 100%;
                         height: 100%;
                         z-index: 5;
                         background: linear-gradient(0deg, #000000 -12.37%, rgba(0, 0, 0, 0) 37.37%) !important;
                     }
-
+                    a{
+                        transition: all 0.8s !important;
+                    }
+                    transition: all 0.8s !important;
                     &:hover {
                         //background-position: top;
                         background-size: 120%;
-                        transition: all 0.4s;
+                        transition: all 0.8s;
 
                         .gradient {
                             transition: all 0.8s;
@@ -465,7 +469,7 @@ header {
 
                         a {
                             top: 40%;
-                            transition: all 0.4s;
+                            
                         }
                     }
 
@@ -689,6 +693,7 @@ header {
                     margin-right: auto;
 
                     h1 {
+                        transition: all 0.4s;
                         font-family: Caveat;
                         font-style: normal;
                         font-weight: normal;
@@ -3564,16 +3569,22 @@ header {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 26px;
-
         a {
             color: #47484E;
-
+            display: -webkit-box;
             svg {
-                margin-right: 5px;
+                margin-right: 10px;
+                margin-bottom: 2px;
             }
 
             &:hover {
                 text-decoration: underline !important;
+                color: #B2820B;
+                svg{
+                    path{
+                        stroke: #B2820B;
+                    }
+                }
             }
         }
     }
@@ -4674,8 +4685,10 @@ header {
     position: fixed;
     width: 418px;
     height: 244px;
-    top: 40%;
-    left: 35%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
 
     background: #FFFFFF;
@@ -4735,8 +4748,11 @@ header {
     background: #FFFFFF;
     z-index: 20;
 
-    top: 10%;
-    left: 30%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     padding-top: 31px;
     padding-left: 61px;
@@ -5281,4 +5297,26 @@ header {
     animation-iteration-count:infinite;
     -moz-animation-iteration-count:infinite;
     -webkit-animation-iteration-count:infinite;
+    }
+
+
+    @media(max-width:1400px){
+        .main-catalog{
+            max-width: 900px !important;
+            .advice{
+                left: -14%!important;
+            }
+
+            .little-heart{
+                right: -10% !important;
+            }
+            .catalog{
+                .catalog-table{
+                    .item{
+                        width: 223px!important;
+                        height: 296px!important;
+                    }
+                }
+            }
+        }
     }
