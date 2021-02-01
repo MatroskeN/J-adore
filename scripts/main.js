@@ -25,7 +25,7 @@ if(DressSwiper){
     var swiper3 = new Swiper('.dress-swiper', {
         slidesPerView: 'auto',
         scrollbar: {
-            el: '.swiper-scrollbar',
+            el: '.dress-scroll',
             hide: false,
             draggable: true,
             snapOnRelease: false,
