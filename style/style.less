@@ -2949,6 +2949,11 @@ header {
                 margin-right: 21px;
                 margin-bottom: 12px;
                 cursor: pointer;
+                .mutter{
+                    a{
+                        color: #47484E; 
+                    }
+                }
                 .sub-list {
                     visibility: hidden;
                     pointer-events: none;
@@ -2968,6 +2973,9 @@ header {
                         position: relative;
                         margin-bottom: 16px;
                         cursor: pointer;
+                        a{
+                            color: #47484E;
+                        }
                         .sub-sub-list {
                             display: flex;
                             flex-direction: column;
@@ -2993,8 +3001,11 @@ header {
                         }
 
                         &:hover {
-                            color: #C89D62;
-                            transition: all 0.4s;
+                            .sub-link{
+                                color: #C89D62;
+                                transition: all 0.4s;
+                            }
+                            
                             .sub-sub-list {
                                 visibility: visible;
                             }
@@ -3004,9 +3015,12 @@ header {
 
                 &:hover {
                     .mutter {
-                        color: #B2820B;
+                        a{
+                            color: #B2820B;
 
-                        transition: all 0.4s;
+                            transition: all 0.4s;
+                        }
+                        
                     }
 
                     .sub-list {
