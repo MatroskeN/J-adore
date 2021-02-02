@@ -129,13 +129,30 @@ $("#close-sign").on("click", function () {
     document.getElementById("dark").style.display = "none";
     document.getElementById("body").style.overflow = "visible";
 })
-
+            let minvalue = document.getElementById('minval').value;
+            let maxvalue = document.getElementById('maxval').value;
 
             $(".js-range-slider").ionRangeSlider({
             type: "double",
             min: 5000,
             max: 40000,
-            from: 5000,
-            to: 10000,
+            from: minvalue,
+            to: maxvalue,
             grid: false
         });
+        let my_range = $(".js-range-slider").data("ionRangeSlider");
+        $("#minval").change(function(){
+            minvalue = document.getElementById('minval').value;
+            my_range.update({
+                from: minvalue,
+                to: maxvalue
+            });
+        })
+
+        $("#maxval").change(function(){
+            maxvalue = document.getElementById('maxval').value;
+            my_range.update({
+                from: minvalue,
+                to: maxvalue
+            });
+        })
